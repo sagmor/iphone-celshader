@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* CelShaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CelShaderAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		280E754D0DD40C5E005A515E /* OptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* OptionsView.xib */; };
+		280E754E0DD40C5E005A515E /* CelShadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* CelShadingView.xib */; };
+		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
+		289233A60DB2D0840083E9F9 /* OptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A30DB2D0840083E9F9 /* OptionsView.m */; };
+		289233A70DB2D0840083E9F9 /* CelShadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A50DB2D0840083E9F9 /* CelShadingView.m */; };
+		289233AE0DB2D0DB0083E9F9 /* CelShadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* CelShadingViewController.m */; };
+		289233AF0DB2D0DB0083E9F9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AB0DB2D0DB0083E9F9 /* RootViewController.m */; };
+		289233B00DB2D0DB0083E9F9 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* OptionsViewController.m */; };
+		CE9C30770E75F35200FEE9E3 /* MD2Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C30760E75F35200FEE9E3 /* MD2Model.m */; };
+		CEAD78CB0E7DC5110055721C /* massm.md2 in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78C90E7DC5110055721C /* massm.md2 */; };
+		CEAD78CC0E7DC5110055721C /* massm.pcx in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78CA0E7DC5110055721C /* massm.pcx */; };
+		CEAD78D30E7DC6320055721C /* blade.pcx in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78CD0E7DC6320055721C /* blade.pcx */; };
+		CEAD78D40E7DC6320055721C /* blade_blue.pcx in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78CE0E7DC6320055721C /* blade_blue.pcx */; };
+		CEAD78D50E7DC6320055721C /* blade_blue.md2 in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78CF0E7DC6320055721C /* blade_blue.md2 */; };
+		CEAD78D60E7DC6320055721C /* darth_vader.pcx in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78D00E7DC6320055721C /* darth_vader.pcx */; };
+		CEAD78D70E7DC6320055721C /* darth_vader.md2 in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78D10E7DC6320055721C /* darth_vader.md2 */; };
+		CEAD78D80E7DC6320055721C /* blade.md2 in Resources */ = {isa = PBXBuildFile; fileRef = CEAD78D20E7DC6320055721C /* blade.md2 */; };
+		CEAD797E0E809A130055721C /* MFCubeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD797D0E809A130055721C /* MFCubeModel.m */; };
+		CEAD799D0E8488DA0055721C /* MFSimple3DModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAD799C0E8488DA0055721C /* MFSimple3DModel.m */; };
+		CED7730E0E5909B300CDC5A1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7730C0E5909B300CDC5A1 /* OpenGLES.framework */; };
+		CED7730F0E5909B300CDC5A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED7730D0E5909B300CDC5A1 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* CelShaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CelShaderAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* CelShaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CelShaderAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* CelShader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelShader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		280E754A0DD40C5E005A515E /* OptionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsView.xib; sourceTree = "<group>"; };
+		280E754B0DD40C5E005A515E /* CelShadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CelShadingView.xib; sourceTree = "<group>"; };
+		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		289233A20DB2D0840083E9F9 /* OptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsView.h; path = Classes/OptionsView.h; sourceTree = "<group>"; };
+		289233A30DB2D0840083E9F9 /* OptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsView.m; path = Classes/OptionsView.m; sourceTree = "<group>"; };
+		289233A40DB2D0840083E9F9 /* CelShadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CelShadingView.h; path = Classes/CelShadingView.h; sourceTree = "<group>"; };
+		289233A50DB2D0840083E9F9 /* CelShadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CelShadingView.m; path = Classes/CelShadingView.m; sourceTree = "<group>"; };
+		289233A80DB2D0DB0083E9F9 /* CelShadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CelShadingViewController.h; path = Classes/CelShadingViewController.h; sourceTree = "<group>"; };
+		289233A90DB2D0DB0083E9F9 /* CelShadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CelShadingViewController.m; path = Classes/CelShadingViewController.m; sourceTree = "<group>"; };
+		289233AA0DB2D0DB0083E9F9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		289233AB0DB2D0DB0083E9F9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		289233AC0DB2D0DB0083E9F9 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionsViewController.h; path = Classes/OptionsViewController.h; sourceTree = "<group>"; };
+		289233AD0DB2D0DB0083E9F9 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionsViewController.m; path = Classes/OptionsViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CelShader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CelShader_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9C30750E75F35200FEE9E3 /* MD2Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD2Model.h; sourceTree = "<group>"; };
+		CE9C30760E75F35200FEE9E3 /* MD2Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD2Model.m; sourceTree = "<group>"; };
+		CEAD78C90E7DC5110055721C /* massm.md2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = massm.md2; sourceTree = "<group>"; };
+		CEAD78CA0E7DC5110055721C /* massm.pcx */ = {isa = PBXFileReference; lastKnownFileType = file; path = massm.pcx; sourceTree = "<group>"; };
+		CEAD78CD0E7DC6320055721C /* blade.pcx */ = {isa = PBXFileReference; lastKnownFileType = file; path = blade.pcx; sourceTree = "<group>"; };
+		CEAD78CE0E7DC6320055721C /* blade_blue.pcx */ = {isa = PBXFileReference; lastKnownFileType = file; path = blade_blue.pcx; sourceTree = "<group>"; };
+		CEAD78CF0E7DC6320055721C /* blade_blue.md2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blade_blue.md2; sourceTree = "<group>"; };
+		CEAD78D00E7DC6320055721C /* darth_vader.pcx */ = {isa = PBXFileReference; lastKnownFileType = file; path = darth_vader.pcx; sourceTree = "<group>"; };
+		CEAD78D10E7DC6320055721C /* darth_vader.md2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = darth_vader.md2; sourceTree = "<group>"; };
+		CEAD78D20E7DC6320055721C /* blade.md2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blade.md2; sourceTree = "<group>"; };
+		CEAD797C0E809A130055721C /* MFCubeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCubeModel.h; sourceTree = "<group>"; };
+		CEAD797D0E809A130055721C /* MFCubeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCubeModel.m; sourceTree = "<group>"; };
+		CEAD799B0E8488DA0055721C /* MFSimple3DModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSimple3DModel.h; sourceTree = "<group>"; };
+		CEAD799C0E8488DA0055721C /* MFSimple3DModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSimple3DModel.m; sourceTree = "<group>"; };
+		CED7730C0E5909B300CDC5A1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CED7730D0E5909B300CDC5A1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				CED7730E0E5909B300CDC5A1 /* OpenGLES.framework in Frameworks */,
+				CED7730F0E5909B300CDC5A1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Application Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				289233AA0DB2D0DB0083E9F9 /* RootViewController.h */,
+				289233AB0DB2D0DB0083E9F9 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* CelShaderAppDelegate.h */,
+				1D3623250D0F684500981E51 /* CelShaderAppDelegate.m */,
+			);
+			name = "Application Controllers";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* CelShader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281C6CD70DB2D82200F60ACC /* Options View */ = {
+			isa = PBXGroup;
+			children = (
+				289233A20DB2D0840083E9F9 /* OptionsView.h */,
+				289233A30DB2D0840083E9F9 /* OptionsView.m */,
+				289233AC0DB2D0DB0083E9F9 /* OptionsViewController.h */,
+				289233AD0DB2D0DB0083E9F9 /* OptionsViewController.m */,
+			);
+			name = "Options View";
+			sourceTree = "<group>";
+		};
+		289233A00DB2D0730083E9F9 /* Cel-Shading View */ = {
+			isa = PBXGroup;
+			children = (
+				289233A40DB2D0840083E9F9 /* CelShadingView.h */,
+				289233A50DB2D0840083E9F9 /* CelShadingView.m */,
+				289233A80DB2D0DB0083E9F9 /* CelShadingViewController.h */,
+				289233A90DB2D0DB0083E9F9 /* CelShadingViewController.m */,
+			);
+			name = "Cel-Shading View";
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C30740E75F32D00FEE9E3 /* Models */,
+				289233A00DB2D0730083E9F9 /* Cel-Shading View */,
+				281C6CD70DB2D82200F60ACC /* Options View */,
+				080E96DDFE201D6D7F000001 /* Application Controllers */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* CelShader_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEAD78C80E7DC5110055721C /* models */,
+				280E754A0DD40C5E005A515E /* OptionsView.xib */,
+				280E754B0DD40C5E005A515E /* CelShadingView.xib */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED7730C0E5909B300CDC5A1 /* OpenGLES.framework */,
+				CED7730D0E5909B300CDC5A1 /* QuartzCore.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9C30740E75F32D00FEE9E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEAD799B0E8488DA0055721C /* MFSimple3DModel.h */,
+				CEAD799C0E8488DA0055721C /* MFSimple3DModel.m */,
+				CE9C30750E75F35200FEE9E3 /* MD2Model.h */,
+				CE9C30760E75F35200FEE9E3 /* MD2Model.m */,
+				CEAD797C0E809A130055721C /* MFCubeModel.h */,
+				CEAD797D0E809A130055721C /* MFCubeModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CEAD78C80E7DC5110055721C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CEAD78CD0E7DC6320055721C /* blade.pcx */,
+				CEAD78CE0E7DC6320055721C /* blade_blue.pcx */,
+				CEAD78CF0E7DC6320055721C /* blade_blue.md2 */,
+				CEAD78D00E7DC6320055721C /* darth_vader.pcx */,
+				CEAD78D10E7DC6320055721C /* darth_vader.md2 */,
+				CEAD78D20E7DC6320055721C /* blade.md2 */,
+				CEAD78C90E7DC5110055721C /* massm.md2 */,
+				CEAD78CA0E7DC5110055721C /* massm.pcx */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* CelShader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CelShader" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CelShader;
+			productName = CelShader;
+			productReference = 1D6058910D05DD3D006BFB54 /* CelShader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CelShader" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* CelShader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E754D0DD40C5E005A515E /* OptionsView.xib in Resources */,
+				280E754E0DD40C5E005A515E /* CelShadingView.xib in Resources */,
+				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
+				CEAD78CB0E7DC5110055721C /* massm.md2 in Resources */,
+				CEAD78CC0E7DC5110055721C /* massm.pcx in Resources */,
+				CEAD78D30E7DC6320055721C /* blade.pcx in Resources */,
+				CEAD78D40E7DC6320055721C /* blade_blue.pcx in Resources */,
+				CEAD78D50E7DC6320055721C /* blade_blue.md2 in Resources */,
+				CEAD78D60E7DC6320055721C /* darth_vader.pcx in Resources */,
+				CEAD78D70E7DC6320055721C /* darth_vader.md2 in Resources */,
+				CEAD78D80E7DC6320055721C /* blade.md2 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* CelShaderAppDelegate.m in Sources */,
+				289233A60DB2D0840083E9F9 /* OptionsView.m in Sources */,
+				289233A70DB2D0840083E9F9 /* CelShadingView.m in Sources */,
+				289233AE0DB2D0DB0083E9F9 /* CelShadingViewController.m in Sources */,
+				289233AF0DB2D0DB0083E9F9 /* RootViewController.m in Sources */,
+				289233B00DB2D0DB0083E9F9 /* OptionsViewController.m in Sources */,
+				CE9C30770E75F35200FEE9E3 /* MD2Model.m in Sources */,
+				CEAD797E0E809A130055721C /* MFCubeModel.m in Sources */,
+				CEAD799D0E8488DA0055721C /* MFSimple3DModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CelShader_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = CelShader;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CelShader_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = CelShader;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CelShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CelShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
