@@ -32,6 +32,8 @@
 	NSTimeInterval animationInterval;
     
     MD2Model *model;
+	CGPoint startTouchPosition;
+	CGFloat initialDistance;
 }
 
 @property NSTimeInterval animationInterval;
@@ -39,5 +41,8 @@
 - (void)startAnimation;
 - (void)stopAnimation;
 - (void)drawView;
+- (void)tick;
+
+- (CGFloat)distanceBetweenTwoPoints:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
 
 @end

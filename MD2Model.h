@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <OpenGLES/EAGL.h>
+#import <OpenGLES/ES1/gl.h>
+#import <OpenGLES/ES1/glext.h>
 
 #define IDP2 844121161
 #define MD2_HEADER_VERSION 8
@@ -79,17 +82,44 @@ typedef struct md2_frame_t
 typedef long MD2GLCmnd;
 
 @interface MD2Model : NSObject {
-    NSString *file;
-    
+    NSString *modelFile;
+    NSString *textureFile;
+    NSString *shaderFile;
+	BOOL isCellShaded;
+	
     MD2Header *header;
     MD2Skin *skins;
     MD2TexCoord *texcoords;
     MD2Triangle *triangles;
     MD2Frame *frames;
     MD2GLCmnd *glcmds;
+	
+	GLfloat *vertex;
+	GLfloat *normals;
+	GLfloat *textures;
+	
+	vec3_t		lightAngle;						// The Direction Of The Light
+	
+	GLuint		shaderTexture[1];						// Storage For One Texture
+	unsigned char shaderData[32][4];				// Storage For The 96 Shader Values
+	GLubyte *textureData;
+	GLuint texId;
 }
 
-- (MD2Model *)initFromFile:(NSString *)filepath;
+- (MD2Model *)initWithModelPath:(NSString *)modelPath andTexturePath:(NSString *)texturePath cellShaded:(bool)cellShaded;
 - (bool)load;
 - (void)draw;
 @end
+
+typedef struct tagMATRIX					// A Structure To Hold An OpenGL Matrix
+	{
+		float data[16];						// We Use [16] Due To OpenGL's Matrix Format
+	}
+	MATRIX;
+
+typedef struct tagVECTOR					// A Structure To Hold A Single Vector
+	{
+		float X, Y, Z;						// The Components Of The Vector
+	}
+	VECTOR;
+

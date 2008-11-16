@@ -11,6 +11,7 @@
 @interface OptionsViewController : UIViewController {
     IBOutlet UISlider *animationSpeed;
     IBOutlet UISwitch *activateCelShading;
+    IBOutlet UISwitch *activateTexture;
 }
 
 @end

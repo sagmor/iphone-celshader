@@ -8,6 +8,8 @@
 
 #import "CelShadingViewController.h"
 #import "CelShadingView.h"
+#import "CelShaderAppDelegate.h"
+#import "MFOptions.h"
 
 @implementation CelShadingViewController
 
@@ -20,11 +22,11 @@
 }
 
 
-/*
- If you need to do additional setup after loading the view, override viewDidLoad.
  - (void)viewDidLoad {
+	 MFOptions *options = [(CelShaderAppDelegate *)[[UIApplication sharedApplication] delegate] options];
+	 self.title = [options modelName];
  }
- */
+ 
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -41,6 +43,14 @@
 
 - (void)dealloc {
 	[super dealloc];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[(CelShadingView *)self.view startAnimation];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[(CelShadingView *)self.view stopAnimation];
 }
 
 
