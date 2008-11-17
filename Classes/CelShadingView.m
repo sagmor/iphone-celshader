@@ -292,7 +292,13 @@
 */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	if ([touches count] == 1) {
+	if ([touches count] == 2) {
+		UITouch *touch1 = [[touches allObjects] objectAtIndex:0];
+		UITouch *touch2 = [[touches allObjects] objectAtIndex:1];
+		initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:self] 
+												 toPoint:[touch2 locationInView:self]];
+		zoomMode = YES;
+	} else if ([touches count] == 1) {
 		UITouch *touch = [touches anyObject];
 		startTouchPosition = [touch locationInView:self];
 		if ([touch tapCount] == 2) {
@@ -303,30 +309,28 @@
 			options.zoom = 1.0f;
 			[self drawView];
 		}
-	} else if ([touches count] == 2) {
-		UITouch *touch1 = [[touches allObjects] objectAtIndex:0];
-		UITouch *touch2 = [[touches allObjects] objectAtIndex:1];
-		initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:self] 
-							   toPoint:[touch2 locationInView:self]];
-	}
+		zoomMode = NO;
+	} 
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	MFOptions *options = [(CelShaderAppDelegate *)[[UIApplication sharedApplication] delegate] options];
 	
-	if ([touches count] == 1) {
+	if ([touches count] == 2) {
+		UITouch *touch1 = [[touches allObjects] objectAtIndex:0];
+		UITouch *touch2 = [[touches allObjects] objectAtIndex:1];
+		float currentDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:self] 
+													   toPoint:[touch2 locationInView:self]];
+		options.zoom = options.zoom + (initialDistance - currentDistance)/100;
+		if (options.zoom < 0.01f) options.zoom = 0.01f;
+		initialDistance = currentDistance;
+		zoomMode = YES;
+	} else if ([touches count] == 1 && !zoomMode) {
 		UITouch *touch = [touches anyObject];
 		CGPoint currentTouchPosition = [touch locationInView:self];
 		options.x = options.x - (startTouchPosition.x - currentTouchPosition.x)/10;
 		options.y = options.y + (startTouchPosition.y - currentTouchPosition.y)/10;
 		startTouchPosition = currentTouchPosition;
-	} else if ([touches count] == 2) {
-		UITouch *touch1 = [[touches allObjects] objectAtIndex:0];
-		UITouch *touch2 = [[touches allObjects] objectAtIndex:1];
-		float currentDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:self] 
-												 toPoint:[touch2 locationInView:self]];
-		options.zoom = options.zoom + (initialDistance - currentDistance)/100;
-		initialDistance = currentDistance;
 	} else {
 		return;
 	}
@@ -335,7 +339,7 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	
+	zoomMode = NO;
 }
 
 - (void)tick {

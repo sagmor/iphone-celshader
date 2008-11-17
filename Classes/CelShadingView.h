@@ -34,6 +34,8 @@
     MD2Model *model;
 	CGPoint startTouchPosition;
 	CGFloat initialDistance;
+	
+	BOOL zoomMode;
 }
 
 @property NSTimeInterval animationInterval;
