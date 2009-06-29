@@ -1,0 +1,17 @@
+body #bodyGrad {
+	width: 104%;
+}
+
+#footer,
+#footer p {
+	margin: 0;
+	padding: 0;
+}
+
+#footer p {
+	padding: 10px;
+}
+
+#breadcrumbcontainer {
+	margin: 0 15px;
+}

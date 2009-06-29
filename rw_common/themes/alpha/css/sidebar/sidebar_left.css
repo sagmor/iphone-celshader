@@ -1,0 +1,12 @@
+#sidebarContainer {
+	float: left;
+	z-index: 1;
+}
+
+#contentContainer {
+	margin-left: 220px;
+}
+
+#sidebarContainer #sidebar {
+	margin-left: 15px;
+}
